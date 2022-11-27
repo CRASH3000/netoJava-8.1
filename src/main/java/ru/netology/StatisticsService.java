@@ -1,5 +1,7 @@
 package ru.netology;
 
+import java.util.Arrays;
+
 public class StatisticsService {
     /**
      * Calculate index of max income
@@ -13,6 +15,7 @@ public class StatisticsService {
         for (long income : incomes)
             if (current_max < income)
                 current_max = income;
+
         return current_max;
     }
 }
